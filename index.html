@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!---MENÜ ENCABEZADO--->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Melina</a>
+            </div>
+            <nav id="nav">
+                <!-- class="responsive" -->
+            <ul>
+                    <li><a href="#inicio" onclick="seleccionar()" >Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()" >Sobre mí</a></li>
+                    <li><a href="#skills" onclick="seleccionar()" >Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()" >Curriculum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()" >Portfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()" >Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!---INICIO--->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="elements/hero.jpg" alt="">
+            </div>
+            <h1>Melina E. Sosa Fuch</h1>
+            <p>__________</p>
+            <h2>Full-Stack Developer</h2>
+            <div class="redes">
+                <a href="https://mail.google.com/mail" target="_blank"
+                rel="noreferrer"><i class="fa-solid fa-at"></i></a>
+                <a href="https://github.com/MelinaFuch" target="_blank"
+                rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/melina-sosa-fuch-1a7376207/" target="_blank"
+                rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="contacto">
+                <button>
+                    <a href="#contacto">Contacto</a> 
+                    <span class="overlay"></span>
+                </button>
+                <button>
+                    <a href="elements/curriculum.pdf"
+                    download='resume'
+                    target='_blank'
+                    rel='noreferrer'>Descargar CV</a>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <p class="hr">________________________________________________________</p>
+
+    <!---SOBRE MÍ--->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy una Programadora Fullstack recientemente graduada de SoyHenry; entusiasta por superar nuevos retos dentro de este gran mundo de tecnología y continuar en constante aprendizaje y autoconocimiento.</br></br>
+                Actualmente me dedico a realizar proyectos e investigar tecnologías que me permiten avanzar en mi formación como programadora. Me entusiasma poder encontrar la solución a los problemas de la vida con código. </br></br>
+                Tengo disposición tanto a enseñar como a aprender de lxs demás; buen desempeño en el trabajo en equipo. Con deseos de poder seguir aprendiendo, adaptando y tomando experiencia de todo lo que implique y pueda relacionar con el tech world y expandir mis conocimientos.
+            </p>
+        </div>
+    </section>
+    
+    <p class="hr">________________________________________________________</p>
+    
+    <!--SKILLS-->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="slider">
+                        <div class="slide-track">
+                                <div class="slide">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" /> 
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207" alt="react" />
+                                    <p>React</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" />
+                                    <p>Redux</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/512px-HTML5_Badge.svg.png?20110131171049" alt="html5" /> 
+                                    <p>HTML</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/250px-CSS3_logo.svg.png" alt="css" />
+                                    <p>CSS</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" alt="bootstrap" />
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png" alt="sequelize" /> 
+                                    <p>Sequelize</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://e7.pngegg.com/pngimages/331/419/png-clipart-postgresql-database-installation-microsoft-sql-server-programming-language-mysql-logo-blue-logo-thumbnail.png" alt="postgresql" /> 
+                                    <p>PostgresSQL</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://png.pngitem.com/pimgs/s/168-1680234_nodejs-logo-svg-hd-png-download.png" alt="nodejs" /> 
+                                    <p>Node.js</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://blog.amt.in/wp-content/uploads/2017/12/e16da876-c2fd-4eb8-ae72-4b193c534938-Edited.png" alt="express" /> 
+                                    <p>Express</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" /> 
+                                    <p>Git</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" /> 
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207" alt="react" />
+                                    <p>React</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" />
+                                    <p>Redux</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/512px-HTML5_Badge.svg.png?20110131171049" alt="html5" /> 
+                                    <p>HTML</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/250px-CSS3_logo.svg.png" alt="css" />
+                                    <p>CSS</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" alt="bootstrap" />
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png" alt="sequelize" /> 
+                                    <p>Sequelize</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://e7.pngegg.com/pngimages/331/419/png-clipart-postgresql-database-installation-microsoft-sql-server-programming-language-mysql-logo-blue-logo-thumbnail.png" alt="postgresql" /> 
+                                    <p>PostgresSQL</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://png.pngitem.com/pimgs/s/168-1680234_nodejs-logo-svg-hd-png-download.png" alt="nodejs" /> 
+                                    <p>Node.js</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://blog.amt.in/wp-content/uploads/2017/12/e16da876-c2fd-4eb8-ae72-4b193c534938-Edited.png" alt="express" /> 
+                                    <p>Express</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" /> 
+                                    <p>Git</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" /> 
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207" alt="react" />
+                                    <p>React</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" />
+                                    <p>Redux</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/512px-HTML5_Badge.svg.png?20110131171049" alt="html5" /> 
+                                    <p>HTML</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/250px-CSS3_logo.svg.png" alt="css" />
+                                    <p>CSS</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" alt="bootstrap" />
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png" alt="sequelize" /> 
+                                    <p>Sequelize</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://e7.pngegg.com/pngimages/331/419/png-clipart-postgresql-database-installation-microsoft-sql-server-programming-language-mysql-logo-blue-logo-thumbnail.png" alt="postgresql" /> 
+                                    <p>PostgresSQL</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://png.pngitem.com/pimgs/s/168-1680234_nodejs-logo-svg-hd-png-download.png" alt="nodejs" /> 
+                                    <p>Node.js</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://blog.amt.in/wp-content/uploads/2017/12/e16da876-c2fd-4eb8-ae72-4b193c534938-Edited.png" alt="express" /> 
+                                    <p>Express</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" /> 
+                                    <p>Git</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" /> 
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207" alt="react" />
+                                    <p>React</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" />
+                                    <p>Redux</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/512px-HTML5_Badge.svg.png?20110131171049" alt="html5" /> 
+                                    <p>HTML</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/250px-CSS3_logo.svg.png" alt="css" />
+                                    <p>CSS</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" alt="bootstrap" />
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png" alt="sequelize" /> 
+                                    <p>Sequelize</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://e7.pngegg.com/pngimages/331/419/png-clipart-postgresql-database-installation-microsoft-sql-server-programming-language-mysql-logo-blue-logo-thumbnail.png" alt="postgresql" /> 
+                                    <p>PostgresSQL</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://png.pngitem.com/pimgs/s/168-1680234_nodejs-logo-svg-hd-png-download.png" alt="nodejs" /> 
+                                    <p>Node.js</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://blog.amt.in/wp-content/uploads/2017/12/e16da876-c2fd-4eb8-ae72-4b193c534938-Edited.png" alt="express" /> 
+                                    <p>Express</p>
+                                </div>
+                                <div class="slide">
+                                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" /> 
+                                    <p>Git</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <p class="hr">________________________________________________________</p>
+
+    <!--CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Licenciatura de Letras</h4>
+                        <span class="casa">UNMDP</span>
+                        <span class="fecha">2020 - 2022</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Full-Stack Developer</h4>
+                        <span class="casa">Henry</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Full Stack Developer [Académico] SPA Dog's</h4>
+                        <span class="casa">Henry</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <div class="conectorx">
+                            <div class="circulox"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Full-Stack Developer [Académico] Huellitas</h4>
+                        <span class="casa">Henry</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <div class="conectorx">
+                            <div class="circulox"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <p class="hr">________________________________________________________</p>
+
+    <!--PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <a href="https://github.com/MelinaFuch/Henry-PI-Dogs" target="_blank" rel="noreferrer" class="proyecto">
+                    <img src="elements/landing.pagePI.png" alt="landing.page">
+                    <!-- <img src="homePI.png" alt="home">
+                    <img src="formPI.png" alt="form"> -->
+                    <div class="overlay">
+                        <h3>SPA Dog's</h3>
+                        <p>Proyecto individual</p>
+                    </div>
+                    <div class="description">
+                        <p> Utiliza una API externa para obtener una amplia variedad de tipos de perros y los usuarios tienen la posibilidad de postear sus propios perritos mediante un formulario con validaciones rigurosas. </br> </br>
+                        Además, la plataforma cuenta con un sistema de filtrado y ordenamiento de razas por nombre, peso y temperamentos. </br></br>
+                        Tecnologías utilizadas: PostgresSQL, Sequelize, Node.js, Express, React, Redux, Javascript, CSS
+                        </p>
+                    </div>
+                </a>
+                <a href="https://huellitasapp.netlify.app/home" target="_blank"
+                rel="noreferrer" class="proyecto">
+                    <img src="elements/homePF.jpg" alt="home.page"/>
+                    <!-- <video src="https://vimeo.com/803978031"></video> -->
+                    <div class="overlay">
+
+
+                        <h3>Huellitas</h3>
+                        <p>Proyecto grupal</p>
+                        <!-- <p>Proyecto grupal (8 integrantes)  -->
+
+                        </p>
+                    </div>
+                    <div class="description">
+                        <p>
+                        [8 integrantes]</br></br>
+                        Portal en linea para dar en adopción y/o adoptar mascotas de manera responsable. También se puede brindar apoyo económico a organizaciones que se involucran al momento de rescatar y cuidar animales, además de dar visibilidad a sus campañas de ayuda para los animalitos que lo necesitan. </br> </br>
+                        Tecnologías utilizadas: PostgresSQL, Sequelize, Node.js, Express, React, Redux, Javascript, CSS, ReactLeaflet, Nodemailer, Mercadopago, Socket.io, entre otras.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <p class="hr">________________________________________________________</p>
+
+    <!--CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+        </div>
+        <div class="redes">
+            <div>
+                <i class="fa-solid fa-at"></i>
+                sosafuchmelina@gmail.com
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-phone"></i>
+                +542236694470
+            </div>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                Mar del Plata, Argentina
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-sharp fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://mail.google.com/mail" target="_blank" rel="noreferrer"><i class="fa-solid fa-at"></i></a>
+            <a href="https://github.com/MelinaFuch" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/melina-sosa-fuch-1a7376207/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+</html>

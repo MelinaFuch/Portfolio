@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&family=Montserrat:wght@200&family=Nanum+Myeongjo&family=Satisfy&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    background-color: #1e2326;
+    color: #fff;
+}
+html {
+    /* Me permite deslizar cuando hago click en los links del menú */
+    scroll-behavior: smooth;
+}
+
+body .hr {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+/* MENÜ */
+.contenedor-header {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Satisfy';
+    font-size: 36px;
+    color: #a77071;
+    text-decoration: none;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+    font-family: 'Montserrat';
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #a77071;
+}
+
+.nav-responsive{
+    background-color: #775051;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* INICIO */
+
+.inicio {
+    background: linear-gradient(to top rgba(30,35,38,.8), rgba(30,35,38,1)),url(https://w0.peakpx.com/wallpaper/267/302/HD-wallpaper-coding-blur-screen-letters-code-computer-code-algorithm-digital-technology.jpg);
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner {
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img {
+    border: 5px solid #775051;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+    margin-top: 25%;
+}
+
+.inicio .contenido-banner h1 {
+    margin-top: 40px;
+    font-size: 30px;
+    font-family: 'Montserrat';
+}
+
+.inicio .contenido-banner p {
+    font-weight: 2000;
+    margin-bottom: 25px;
+}
+
+.inicio .contenido-banner h2 {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Montserrat';
+}
+
+.inicio .contenido-banner .redes a {
+    color: rgba(234, 234, 234, 0.8);
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.inicio .contenido-banner .redes a:hover {
+    border-color: #a77071;
+    opacity: 0.5;
+}
+
+.inicio .contenido-banner .contacto {
+    display: flex;
+    margin-left: 5px;
+}
+
+.inicio .contenido-banner .contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid rgba(234, 234, 234, 0.8);
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+
+.inicio .contenido-banner .contacto button a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.inicio .contenido-banner .contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #775051;
+    z-index: -1;
+    transition: 1s;
+}
+
+.inicio .contenido-banner .contacto button:hover .overlay {
+    width: 100%;
+}
+
+/* SOBRE MÍ */
+
+.sobremi {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Montserrat';
+    margin-bottom: 9%;
+    margin-top: 2%;
+    color: #fff;
+}
+
+.sobremi .contenido-seccion p {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: rgba(234, 234, 234, 0.8);
+    justify-content: baseline;
+    margin-bottom: 15px;
+}
+
+/* SKILLS */
+
+.skills {
+    /*background-color: #252A2E;*/
+    color: #fff;
+    padding: 50px 20px;
+    height: max-content;
+}
+
+.skills .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Montserrat';
+    margin-top: 5%;
+    /* padding-top: 50%; */
+    margin-bottom: 5%;
+    color: #fff;
+}
+
+.skills .fila {
+    display: flex;
+}
+
+.skills .fila .col {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .fila .col h3 {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    margin-bottom: 25px;
+    color: #fff;
+
+}
+
+.skills .fila .col .slider {
+    width: 225%;
+    height: auto;
+    overflow: hidden;
+
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom: 35%;
+}
+
+.skills .fila .col .slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 60);
+
+    justify-content: center;
+    padding: 30px 0;
+    margin-bottom: 20px;
+}
+
+.skills .fila .col .slider .slide {
+    width: 200px;
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    margin: 0 40px;
+}
+
+.skills .fila .col .slider .slide img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.skills .fila .col .slider .slide p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 12));
+        transform: translateX(calc(-200px * 12));
+    }
+}
+
+/* CURRICULUM */
+
+.curriculum {
+    /*background-color: #252A2E;*/
+    color: #fff;
+    padding: 50px 20px;
+    justify-content: baseline;
+}
+
+.curriculum .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum h2 {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Montserrat';
+    margin-bottom: 15px;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 6%;
+}
+
+.curriculum .fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+.curriculum .fila .col h3 {
+    font-size: 25px;
+    font-family: 'Montserrat';
+    margin-bottom: 10%;
+    margin-left: 2%;
+    color: rgba(234, 234, 234, 0.8);
+}
+
+.curriculum .fila .izquierda {
+    border-right: 2px solid #252a2e;
+}
+
+.curriculum .fila .derecha {
+    border-left: 2px solid #252a2e;
+}
+
+.curriculum .fila .item {
+    padding: 25px;
+    margin-bottom: 40px;
+    background-color: #252a2e;
+    position: relative;
+}
+
+.curriculum .fila .item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #252a2e;
+}
+
+.curriculum .fila .item .casa {
+    color: #a77071;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    background-color: #252a2e;
+}
+
+.curriculum .fila .item .fecha {
+    display: block;
+    color: #a77071;
+    margin-bottom: 10px;
+    background-color: #252a2e;
+
+}
+
+.curriculum .fila .izq {
+    border-right: 2px solid #a77071;
+    margin-right: 20px;
+}
+
+.curriculum .fila .der {
+    border-left: 2px solid #a77071;
+    margin-left: 20px;
+}
+
+.curriculum .fila .item .conectori {
+    height: 2px;
+    background-color: #a77071;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectori .circuloi {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #a77071;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .fila .item .conectorx {
+    height: 2px;
+    background-color: #a77071;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectorx .circulox {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #a77071;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    /*background-color: #252A2E;*/
+    color: #fff;
+    padding: 50px 20px;
+    justify-content: baseline;
+}
+
+.portfolio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Montserrat';
+    margin-bottom: 15px;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.portfolio .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio .galeria .proyecto {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.portfolio .galeria .proyecto img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio .galeria .proyecto .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(#775051e8, #775051e8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+    margin-bottom: 20px;
+    transition: 1s;
+    background-color: #252A2E;
+}
+
+.portfolio .galeria .proyecto .overlay p {
+    background-color: #252A2E;
+}
+
+.portfolio .galeria .proyecto .overlay:hover {
+    opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
+    margin-bottom: 0;
+}
+
+.portfolio .galeria .proyecto .description {
+    margin-top: 7%;
+    font-family: 'Montserrat';
+    font-size: 17.4px;
+    color: rgba(234, 234, 234, 0.8);
+    justify-content: baseline;
+    margin-bottom: 15px;
+}
+
+/* CONTACTO */
+
+.contacto {
+    /*background-color: #252A2E;*/
+    color: #fff;
+    padding: 50px 0;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 13%;
+}
+
+.contacto .contenido-seccion {
+    /* max-width: 1100px; */
+    margin: auto;
+}
+
+.contacto h2 {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Montserrat';
+    margin-bottom: 15px;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.contacto .redes {
+    color: rgba(234, 234, 234, 0.8);
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 3%;
+}
+
+.contacto .redes div {
+    margin-top: 15%;
+    margin-bottom: 3%;
+}
+
+.contacto .redes div i {
+    margin-right: 15px;
+    border-radius: 50%;
+
+    color: rgba(234, 234, 234, 0.8);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    margin: 20px 5px;
+    margin-left: 5px;
+    font-size: 22px;
+    transition: .5s;
+
+}
+
+.contacto .redes i:hover {
+    border-color: #a77071;
+    opacity: 0.5;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #252a2e;
+    color: #fff;
+    padding: 30px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes {
+    background-color: #252a2e;
+    margin-bottom: 20px;
+}
+
+footer .redes a {
+        color: rgba(234, 234, 234, 0.8);
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        margin: 40px 5px;
+        font-size: 20px;
+        transition: .5s;
+    }
+
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #a77071;
+    color: rgba(234, 234, 234, 0.8);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -13%;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+footer .arriba i {
+    background-color: #a77071;
+}
+
+footer .redes a:hover {
+    border-color: #a77071;
+    opacity: 0.5;
+}
+
+/* .carrusel {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.carrusel-items {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 30px 0;
+}
+
+.carrusel-item {
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.carrusel-item:hover {
+    transform: scale(1.2);
+}
+
+.carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel-item p {
+    font-family: 'Montserrat';
+} */
+
+/* RESPONSIVE */
+@media screen and (max-width:980px){
+
+    nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+        background-color: #77505177;
+        font-size: 20px;
+    }
+
+    .nav-responsive i {
+        background-color: transparent;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid #1e2326;
+        padding: 10px 0;
+        font-family: 'Montserrat';
+    }
+}
+
+@media screen and (max-width:700px){
+
+    .sobremi .fila {
+        display: block;
+    }
+
+    .sobremi .fila .col {
+        width: fit-content;
+    }
+
+    .skills .fila {
+        display: block;
+    }
+
+    .skills .fila .col {
+        width: 100%;
+    }
+
+    .curriculum .fila {
+        display: block;
+    }
+
+    .curriculum .fila .col {
+        width: 90%;
+    }
+
+    .curriculum .fila .derecha {
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria {
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+    }
+
+    .portfolio .galeria .proyecto img {
+        width: 100%;
+    }
+    
+    .portfolio .galeria .proyecto .description {
+        margin-bottom: 5%;
+    }
+
+
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
+}
+
