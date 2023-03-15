@@ -722,7 +722,7 @@ footer .redes a:hover {
         display: block;
     }
 
-    .skills .fila .col {
+    .skills .fila .col .slider {
         width: 100%;
     }
 
@@ -763,5 +763,6 @@ footer .redes a:hover {
     .contacto .fila .col {
         width: 100%;
     }
+
 }
 
