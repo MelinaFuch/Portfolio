@@ -10,6 +10,7 @@
     background-color: #1e2326;
     color: #fff;
 }
+
 html {
     /* Me permite deslizar cuando hago click en los links del menú */
     scroll-behavior: smooth;
