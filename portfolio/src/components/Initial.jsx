@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button, Box, Typography } from "@mui/material";
+import "./Initial.modules.css";
 
 function Initial() {
   const [text, setText] = useState("");
@@ -104,13 +105,14 @@ function Initial() {
       >
         {showButton && (
           <Button
+            className="button-continue"
             sx={{
               pl: 2,
               pr: 2,
               fontSize: "2rem",
-              border: "5px solid #5cff5c",
+              border: "3px solid #5cff5c",
+              borderRadius: "5px",
               color: "#5cff5c",
-              // width: '7rem',
               textShadow:
                 "0 0 5px #008000, 0 0 10px #008000, 0 0 15px #008000, 0 0 20px #008000",
             }}
